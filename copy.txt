@@ -18,7 +18,7 @@ h2 {
 
 Colors:
 Peach: #ECC7AB
-Orange: #D9A724 Aqua: #738DA0
+Orange: #D9A724Aqua: #738DA0
 Yellow: #FFD363
 
 Width of page: 100%
@@ -48,11 +48,11 @@ View Lookbooks
 OVERLAY
 
 Home
- Lookbooks
+Lookbooks
 Store
 Contact
 
 Facebook
- Twitter 
+Twitter
 Instagram
 Tumblr

@@ -1,0 +1,22 @@
+body {
+  background-color: #000000;
+  color: #EEE;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+header a {
+  text-decoration: none;
+  color: #EEE;
+}
+
+header div img {
+  display: none;
+}
