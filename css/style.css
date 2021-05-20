@@ -19,4 +19,8 @@ header a {
 
 header div img {
   display: none;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #000;
+  color: #EEE;
 }
