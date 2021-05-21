@@ -84,13 +84,14 @@ header div img {
 
 .clothes {
   width: 890px;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
 }
 
 .clothes .wrapper {
   display: flex;
   position: relative;
   justify-content: flex-start;
+  margin-bottom: 120px;
 }
 
 .clothes img {
@@ -129,4 +130,51 @@ header div img {
   width: 150px;
   height: 150px;
   background-color: #738DA0;
+}
+
+.one-thing {
+  width: 1193px;
+  margin: 0 86px 0 auto;
+  padding-right: 25px;
+}
+
+.one-thing .wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.one-thing img{
+  width: 660px;
+}
+
+.text {
+  margin-top: 0;
+  transform: translateX(25%);
+}
+
+.text p {
+  width: 350px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.one-thing .circle {
+  top: 120px;
+  left: 390px;
+  right: 60px;
+  transform: translateX(50%);
+}
+
+.one-thing .square {
+  top: 450px;
+  left: 1050px;
+  transform: translateX(50%);
+}
+
+.text h1 {
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1;
+  
 }
