@@ -84,7 +84,7 @@ header div img {
 
 .clothes {
   width: 890px;
-  margin: 0 auto 0 0;
+  margin: 0 auto 0;
 }
 
 .clothes .wrapper {
@@ -109,28 +109,7 @@ header div img {
   line-height: 1;
 }
 
-.shape {
-  position: absolute;
-}
-
-.circle {
-  top: 60px;
-  left: 0;
-  transform: translateX(-50%);
-  width: 144px;
-  height: 144px;
-  background-color: #D9A724;
-  border-radius: 100px;
-}
-
-.square {
-  bottom: 0;
-  left: 430px;
-  transform: translate(-250px, 50%);
-  width: 150px;
-  height: 150px;
-  background-color: #738DA0;
-}
+/* One Thing */
 
 .one-thing {
   width: 1193px;
@@ -177,4 +156,29 @@ header div img {
   font-weight: 500;
   line-height: 1;
   
+}
+
+/* Shapes */
+
+.shape {
+  position: absolute;
+}
+
+.circle {
+  top: 60px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 144px;
+  height: 144px;
+  background-color: #D9A724;
+  border-radius: 100px;
+}
+
+.square {
+  bottom: 0;
+  left: 430px;
+  transform: translate(-250px, 50%);
+  width: 150px;
+  height: 150px;
+  background-color: #738DA0;
 }
