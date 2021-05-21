@@ -169,7 +169,7 @@ header div img {
 .one-thing .square {
   top: 450px;
   left: 1050px;
-  transform: translate(50%);
+  transform: translateX(50%);
 }
 
 .text h1 {
