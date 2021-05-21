@@ -12,8 +12,8 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0 53px;
   margin-top: 10px;
 }
@@ -23,8 +23,6 @@ header a {
   color: #FFF;
   font-size: 14px;
   margin-right: 5px;
-  position: relative;
-  top: 30px;
   padding: 0;
 }
 
@@ -92,7 +90,6 @@ header div img {
 .clothes .wrapper {
   display: flex;
   position: relative;
-  flex-direction: row;
   justify-content: flex-start;
 }
 
