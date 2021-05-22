@@ -199,6 +199,7 @@ header div img {
 .lookbook .wrapper {
   postion: flex;
 }
+
 .lookbook a img {
   width: 60px;
   position: relative;
@@ -207,6 +208,31 @@ header div img {
   margin-bottom: 20px;
   display: none;
 }
+
+.spring-collection .wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 60px;
+  justify-content: center;
+  margin-bottom: 240px;
+}
+
+.spring-collection h1 {
+  font-size: 120px;
+  width: 671px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: -265px;
+}
+
+.spring-collection img {
+  width: 900px;
+  margin: 250px 500px 0 500px;
+}
+
+
 /* Shapes */
 
 .shape {
