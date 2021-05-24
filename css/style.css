@@ -196,8 +196,9 @@ header div img {
   margin: 0 auto;
   padding: 260px 0 200px 0;
 }
+
 .lookbook .wrapper {
-  postion: flex;
+  position: flex;
 }
 
 .lookbook a img {
@@ -215,7 +216,7 @@ header div img {
   position: relative;
   padding: 0 60px;
   justify-content: center;
-  margin-bottom: 240px;
+  margin-bottom: 0px;
 }
 
 .spring-collection h1 {
@@ -232,6 +233,31 @@ header div img {
   margin: 250px 500px 0 500px;
 }
 
+/* Footer */
+
+footer {
+  background-image: url(../assets/footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  height: 300px;
+  width: 100%;
+  margin-top: -40px;
+}
+
+footer nav {
+  width: 100%;
+  margin: 0;
+  /* transform: translate(25%); */
+}
+
+footer nav a {
+  margin-right: 39px;
+  text-decoration: none;
+  font-size: 60px;
+  color: #FFF;
+}
 
 /* Shapes */
 
