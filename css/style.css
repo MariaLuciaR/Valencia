@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "HK Grotesk";
   font-weight: 600;
   src: url("./assets/hkgrotesk-semibold-webfont.woff2") format("woff2"),
@@ -10,7 +10,7 @@
   font-weight: 700;
   src: url("./assets/hkgrotesk-bold-webfont.woff2") format("woff2"),
     url("./assets/hkgrotesk-bold-webfont.woff") format("woff");
-}
+} */
 
 body {
   font-family: "HK Grotesk";
@@ -18,18 +18,20 @@ body {
   color: #FFF;
   font-size: 18px;
   line-height: 1.5;
-  margin: auto;
-  max-height: 100%;
+  margin: 0;
+  /* width: 100%; */
 }
 
-/* Header Section */
+/*///////////////////
+////// HEADER //////
+//////////////////*/
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 53px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 header a {
@@ -97,11 +99,13 @@ header div img {
   font-size: 30px;
 }
 
-/* Clothes Section */
+/*//////////////////////////////////////////////
+/////////////// CLOTHES SECTION ///////////////
+/////////////////////////////////////////////*/
 
 .clothes {
   width: 890px;
-  margin: 0 auto 0;
+  margin: 80px auto 0;
 }
 
 .clothes .wrapper {
@@ -112,7 +116,7 @@ header div img {
 }
 
 .clothes img {
-  width: 430px;
+  max-width: 450px;
 }
 
 .clothes h1 {
@@ -126,7 +130,9 @@ header div img {
   line-height: 1;
 }
 
-/* One Thing */
+/*////////////////////////////
+///////// ONE-THING /////////
+///////////////////////////*/
 
 .one-thing {
   width: 100%;
@@ -142,7 +148,7 @@ header div img {
 }
 
 .one-thing img{
-  width: 660px;
+  max-width: 660px;
 }
 
 .text {
@@ -174,41 +180,54 @@ header div img {
 
 .one-thing .square {
   top: 450px;
-  left: 1180px;
+  left: 1190px;
   transform: translateX(90%);
 }
 
-/* Lookbook */
+/*///////////////////////////
+///////// LOOKBOOK /////////
+//////////////////////////*/
 
 .lookbook {
- background-image: url(../assets/image_3.jpeg);
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
+  margin-top: 90px;
 }
-
 .lookbook h1 {
   font-size: 120px;
   font-weight: 500;
   width: 671px;
   text-align: center;
-  top: 0;
+  position: relative;
+  top: 150px;
+  bottom: 0;
   margin: 0 auto;
-  padding: 260px 0 200px 0;
+  padding: 0;
 }
 
 .lookbook .wrapper {
   position: flex;
+  height: 800px;
 }
 
 .lookbook a img {
-  width: 60px;
+  max-width: 60px;
   position: relative;
   top: 230px;
   left: 910px;
   margin-bottom: 20px;
   display: none;
 }
+
+.lookbook .image3 {
+  z-index: -1;
+  position: relative;
+  top: -450px;
+  bottom: 0;
+  width: 100%;
+}
+
+/*////////////////////////////////////////////////////
+///////////////// SPRING COLLECTION /////////////////
+///////////////////////////////////////////////////*/
 
 .spring-collection .wrapper {
   display: flex;
@@ -229,11 +248,15 @@ header div img {
 }
 
 .spring-collection img {
-  width: 900px;
-  margin: 250px 500px 0 500px;
+  max-width: 900px;
+  margin-top: 250px;
+  padding: 0 25%;
 }
 
-/* Footer */
+
+/*///////////////////
+////// FOOTER //////
+//////////////////*/
 
 footer {
   background-image: url(../assets/footer.svg);
@@ -248,8 +271,6 @@ footer {
 
 footer nav {
   width: 100%;
-  margin: 0;
-  /* transform: translate(25%); */
 }
 
 footer nav a {
@@ -259,7 +280,9 @@ footer nav a {
   color: #FFF;
 }
 
-/* Shapes */
+/*//////////////////
+////// SHAPES //////
+//////////////////*/
 
 .shape {
   position: absolute;
@@ -283,3 +306,662 @@ footer nav a {
   height: 150px;
   background-color: #738DA0;
 }
+
+/*////////////////////////////////////////
+///////////// MEDIA QUERIES /////////////
+///////////////////////////////////////*/
+
+@media screen and (max-width: 1076px) {
+
+  body {
+    font-family: "HK Grotesk";
+    background-color: #ECC7AB;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 53px;
+    margin-top: 30px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 0;
+  }
+  
+  header h1{
+    text-align: initial;
+  }
+  header div img {
+    display: none;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #000;
+    color: #FFF;
+  }
+  
+  .menu {
+    background-color: #FFD363;
+    width: 820px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+  }
+  
+  .menu a {
+    display: block;
+    flex-direction: column;
+    justify-content: right;
+    text-decoration: none;
+    color: #FFF;
+    text-align: right;
+  }
+  
+  .pages {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    margin: 120px 0 0 100px;
+  }
+  
+  .pages a {
+    font-size: 120px;
+    line-height: 1;
+  }
+  
+  .social-media {
+    position: fixed;
+    top: 620px;
+    right: 0;
+    margin-top: 100px;
+    margin-right: 50px;
+    line-height: 1.15;
+  }
+  
+  .social-media a {
+    font-size: 30px;
+  }
+  
+  /*//////////////////////////////////////////////
+  /////////////// CLOTHES SECTION ///////////////
+  /////////////////////////////////////////////*/
+  
+  .clothes {
+    width: 890px;
+    margin: 80px auto 0;
+  }
+  
+  .clothes .wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 120px;
+    margin-left: 50px;
+  }
+  
+  .clothes .wrapper img {
+    width: 250px;
+  }
+  
+  .clothes h1 {
+    color: #FFF;
+    font-size: 70px;
+    font-weight: 500;
+    width: 380px;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: -100px;
+    line-height: 1;
+  }
+  
+  .clothes .circle {
+    top: 10px;
+    left: 120px;
+    transform: translateX(0%);
+    width: 100px;
+    height: 100px;
+    background-color: #D9A724;
+    border-radius: 100px;
+  }
+  
+  .clothes .square {
+    bottom: -10px;
+    left: 530px;
+    width: 100px;
+    height: 100px;
+    background-color: #738DA0;
+  }
+  /*////////////////////////////
+  ///////// ONE-THING /////////
+  ///////////////////////////*/
+  
+  .one-thing {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+  
+  .one-thing .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px;
+  }
+
+  .one-thing .wrapper img {
+    width: 330px;
+    position: relative;
+    right: 150px;
+
+  }
+  
+  .text {
+    margin-top: 30px;
+    position: relative;
+    left: 30px;
+    z-index: 1;
+  }
+  
+  .text h1 {
+    width: 300px;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 70px;
+    margin-bottom: 29px;
+  } 
+  
+  .text p {
+    width: 300px;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-left: 3px;
+    margin-top: 0;
+  }
+  
+  .one-thing .circle {
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    left: 420px;
+    transform: translateX(50%);
+  }
+  
+  .one-thing .square {
+    top: 240px;
+    width: 100px;
+    height: 100px;
+    left: 800px;
+    transform: translateY(100%);
+  }
+  
+  /*///////////////////////////
+  ///////// LOOKBOOK /////////
+  //////////////////////////*/
+  .lookbook {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .lookbook h1 {
+    font-size: 80px;
+    font-weight: 500;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    top: 195px;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .lookbook .wrapper {
+    position: flex;
+    height: 800px;
+  }
+  
+  .lookbook a img {
+    width: 100%;
+    position: relative;
+    top: 230px;
+    left: 910px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  .lookbook .image3 {
+    z-index: -1;
+    width: 100%;
+    position: relative;
+    top: -180px;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+  }
+  
+  /*////////////////////////////////////////////////////
+  ///////////////// SPRING COLLECTION /////////////////
+  ///////////////////////////////////////////////////*/
+  
+  .spring-collection .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 60px;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  
+  .spring-collection h1 {
+    font-size: 80px;
+    width: 500px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: -185px;
+  }
+
+  .spring-collection img {
+    width: 700px;
+    margin: 0;
+    padding: 0 0 0 175px;
+    
+  }
+  
+  
+  /*///////////////////
+  ////// FOOTER //////
+  //////////////////*/
+  
+  footer {
+    background-image: url(../assets/footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    height: 250px;
+    width: 100%;
+    margin-top: -40px;
+  }
+  
+  footer nav {
+    width: 100%;
+    margin-top: 36px;
+  }
+  
+  footer nav a {
+    margin-right: 39px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #FFF;
+  }
+  
+  /*//////////////////
+  ////// SHAPES //////
+  //////////////////*/
+  
+  .shape {
+    position: absolute;
+  }
+  
+  .circle {
+    top: 60px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 144px;
+    height: 144px;
+    background-color: #D9A724;
+    border-radius: 100px;
+  }
+  
+  .square {
+    bottom: 0;
+    left: 430px;
+    transform: translate(-250px, 50%);
+    width: 150px;
+    height: 150px;
+    background-color: #738DA0;
+  }
+} 
+
+@media screen and (max-width: 425px) {
+  body {
+  font-family: "HK Grotesk";
+  background-color: #ECC7AB;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  width: 210%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 53px;
+  margin-top: 30px;
+}
+
+header a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 14px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+header h1{
+  text-align: initial;
+}
+header div img {
+  display: none;
+  font-size: 20px;
+  line-height: 1.5;
+  background-color: #000;
+  color: #FFF;
+}
+
+.menu {
+  background-color: #FFD363;
+  width: 820px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+}
+
+.menu a {
+  display: block;
+  flex-direction: column;
+  justify-content: right;
+  text-decoration: none;
+  color: #FFF;
+  text-align: right;
+}
+
+.pages {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  margin: 120px 0 0 100px;
+}
+
+.pages a {
+  font-size: 120px;
+  line-height: 1;
+}
+
+.social-media {
+  position: fixed;
+  top: 620px;
+  right: 0;
+  margin-top: 100px;
+  margin-right: 50px;
+  line-height: 1.15;
+}
+
+.social-media a {
+  font-size: 30px;
+}
+
+/*//////////////////////////////////////////////
+/////////////// CLOTHES SECTION ///////////////
+/////////////////////////////////////////////*/
+
+.clothes {
+  width: 890px;
+  margin: 80px auto 0;
+}
+
+.clothes .wrapper {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  margin-bottom: 120px;
+  margin-left: 90px;
+}
+
+.clothes .wrapper img {
+  width: 280px;
+}
+
+.clothes h1 {
+  color: #FFF;
+  font-size: 60px;
+  font-weight: 500;
+  width: 250px;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: -50px;
+  line-height: 1;
+}
+
+.clothes .circle {
+  top: 20px;
+  left: -40px;
+  transform: translateX(0%);
+  width: 80px;
+  height: 80px;
+  background-color: #D9A724;
+  border-radius: 100px;
+}
+
+.clothes .square {
+  bottom: -10px;
+  left: 400px;
+  width: 80px;
+  height: 80px;
+  background-color: #738DA0;
+}
+/*////////////////////////////
+///////// ONE-THING /////////
+///////////////////////////*/
+
+.one-thing {
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+.one-thing .wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0px;
+  top: -90px;
+}
+
+.one-thing .wrapper img {
+  width: 330px;
+  position: relative;
+  right: 90px;
+}
+
+.text {
+  margin-top: 30px;
+  position: relative;
+  left: 60px;
+  z-index: 1;
+}
+
+.text h1 {
+  width: 300px;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1;
+  margin-top: 70px;
+  margin-bottom: 29px;
+} 
+
+.text p {
+  width: 300px;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-left: 3px;
+  margin-top: 0;
+}
+
+.one-thing .circle {
+  top: 30px;
+  width: 80px;
+  height: 80px;
+  left: 390px;
+  transform: translateX(50%);
+}
+
+.one-thing .square {
+  top: 240px;
+  width: 80px;
+  height: 80px;
+  left: 760px;
+  transform: translateY(100%);
+}
+
+/*///////////////////////////
+///////// LOOKBOOK /////////
+//////////////////////////*/
+.lookbook {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+.lookbook h1 {
+  font-size: 80px;
+  font-weight: 500;
+  width: 500px;
+  text-align: center;
+  position: flex;
+  top: 0px;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.lookbook .wrapper,
+.lookbook .wrapper img{
+  position: flex;
+  height: 350px;
+}
+
+.lookbook a img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 910px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.lookbook .image3 {
+  z-index: -1;
+  width: 100%;
+  position: relative;
+  top: -280px;
+  bottom: 0;
+}
+
+/*////////////////////////////////////////////////////
+///////////////// SPRING COLLECTION /////////////////
+///////////////////////////////////////////////////*/
+
+.spring-collection {
+  margin: 80px 0 20px 0;
+}
+.spring-collection .wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.spring-collection h1 {
+  font-size: 60px;
+  width: 400px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: -105px;
+}
+
+.spring-collection img {
+  width: 700px;
+  margin: 0;
+  padding-left: 100px;
+  
+}
+
+
+/*///////////////////
+////// FOOTER //////
+//////////////////*/
+
+footer {
+  background-image: url(../assets/footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  height: 250px;
+  width: 100%;
+  margin-top: -40px;
+}
+
+footer nav {
+  width: 100%;
+  margin-top: 38px;
+}
+
+footer nav a {
+  margin-right: 39px;
+  text-decoration: none;
+  font-size: 40px;
+  color: #FFF;
+}
+
+/*//////////////////
+////// SHAPES //////
+//////////////////*/
+
+.shape {
+  position: absolute;
+}
+
+.circle {
+  top: 60px;
+  left: 0;
+  transform: translateX(-50%);
+  width: 144px;
+  height: 144px;
+  background-color: #D9A724;
+  border-radius: 100px;
+}
+
+.square {
+  bottom: 0;
+  left: 430px;
+  transform: translate(-250px, 50%);
+  width: 150px;
+  height: 150px;
+  background-color: #738DA0;
+}
+} 
+
+
+ 
